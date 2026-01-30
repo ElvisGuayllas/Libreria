@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class OperacionesMatrices {
     
     public static void main(String[] args) {
-        // Aquí empiezo todo el programa
+        //Inicializo variables
         Scanner sc = new Scanner(System.in);
         int[][] matrizA = new int[2][3];  // Mi primera matriz
         int[][] matrizB = new int[2][3];  // Mi segunda matriz
 
-        // Primero pido los números al usuario
+        //pido los números al usuario
         System.out.println("=== Vamos a llenar las matrices ===");
         CompletarMatrices(matrizA, matrizB, sc);
 
@@ -19,7 +19,7 @@ public class OperacionesMatrices {
         int[][] resta = restaMatriz(matrizA, matrizB);
         int[][] multi = multiMatriz(matrizA, matrizB);
 
-        // Y muestro los resultados bonitos
+        //Se muestran los resultados
         System.out.println("\n=== Aquí están los resultados ===");
         mostrarResultado("Matriz A:", matrizA);
         mostrarResultado("Matriz B:", matrizB);
@@ -33,7 +33,7 @@ public class OperacionesMatrices {
 
     //Método para que el usuario meta los números
     public static void CompletarMatrices(int[][] m1, int[][] m2, Scanner sc) {
-        //M2
+        //MATRIZ 1
         System.out.println("Ingresa los valores de la Matriz 1 (2x3):");
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {
@@ -43,7 +43,7 @@ public class OperacionesMatrices {
             System.out.println();  // Salto de línea para que se vea ordenado
         }
 
-        //M2
+        //MATRIZ 2
         System.out.println("Ingresa los valores de la Matriz 2 (2x3):");
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {
