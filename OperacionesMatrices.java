@@ -1,6 +1,5 @@
-import java.util.Scanner;
-
 //Programa de operaciones con matrices 2x3 Hace suma, resta y multiplicación de dos matrices
+import java.util.Scanner;
 
 public class OperacionesMatrices {
     
